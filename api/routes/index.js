@@ -1,0 +1,40 @@
+const authUsersRoute = require("./authRoute");
+const userRoute = require("./userRoute");
+const coursesRoute = require("./coursesRout");
+const lecturesRoute = require("./lecturesRout");
+const gradesRoutes = require("./gradesRoutes");
+const quizRoutes = require("./quizRoutes");
+const quizSubmissionRoutes = require("./quizSubmissionRoutes");
+const courseAssignmentRoutes = require("./courseAssignmentRoutes");
+const notificationRoutes = require("./notificationRoutes");
+const attendanceRoutes = require("./attendanceRoutes");
+const ferRoutes = require("./ferRoutes");
+const courseRegistrationRoutes = require("./courseRegistrationRoutes");
+const chatRoute = require("./chatRoute");
+const registrationAdminRoutes = require("./registrationAdminRoutes");
+const studentRegistrationRoutes = require("./studentRegistrationRoutes");
+const quizGeneratorRoute = require("./quizGeneratorRoute");
+const chatBotRoutes = require("./chatBotRoute");
+const courseRecommenedRoute = require("./courseRecommenedRoute");
+function mountRoutes(app) {
+  app.use("/api/auth", authUsersRoute);
+  app.use("/api/users", userRoute);
+  app.use("/api/courses", coursesRoute);
+  app.use("/api/lectures", lecturesRoute);
+  app.use("/api/grades", gradesRoutes);
+  app.use("/api/quizzes", quizRoutes);
+  app.use("/api/quiz-submissions", quizSubmissionRoutes);
+  app.use("/api", courseAssignmentRoutes);
+  app.use("/api/notifications", notificationRoutes);
+  app.use("/api/attendance", attendanceRoutes);
+  app.use("/api/fer", ferRoutes);
+  app.use("/api/course-registration", courseRegistrationRoutes);
+  app.use("/api/chat", chatRoute);
+  app.use("/api/admin", registrationAdminRoutes);
+  app.use("/api/student", studentRegistrationRoutes);
+  app.use("/api/quiz-generator", quizGeneratorRoute);
+  app.use("/api/chatbot", chatBotRoutes);
+  app.use("/api/recommend", courseRecommenedRoute);
+}
+
+module.exports = mountRoutes;

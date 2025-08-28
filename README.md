@@ -44,22 +44,49 @@ The system integrates **LLMs** and **Facial Expression Recognition (FER)** to en
 
 ## 📂 Project Structure
 
+# LearnGauge-edu-ai
+
+## Project Structure
+
+```
 LearnGauge-edu-ai/
 │
-├── ui/ # Frontend (React + TailwindCSS)
-│ ├── public/
-│ ├── src/
-│ └── package.json
+├── ui/                    # Frontend (React + TailwindCSS)
+│   ├── public/
+│   ├── src/
+│   └── package.json
 │
-├── api/ # Backend (Node.js + Express)
-│ ├── controllers/
-│ ├── models/
-│ ├── routes/
-│ ├── utils/
-│ ├── server.js
-│ └── package.json
+├── api/                   # Backend (Node.js + Express)
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   ├── utils/
+│   ├── server.js
+│   └── package.json
 │
-├── README.md
+└── README.md
+```
+
+## Directory Overview
+
+### `/ui` - Frontend
+- **Framework**: React with TailwindCSS
+- **Purpose**: User interface and client-side functionality
+- **Structure**:
+  - `public/` - Static assets
+  - `src/` - React components and source code
+  - `package.json` - Frontend dependencies
+
+### `/api` - Backend
+- **Framework**: Node.js with Express
+- **Purpose**: Server-side API and business logic
+- **Structure**:
+  - `controllers/` - Request handlers and business logic
+  - `models/` - Data models and database schemas
+  - `routes/` - API route definitions
+  - `utils/` - Helper functions and utilities
+  - `server.js` - Main server entry point
+  - `package.json` - Backend dependencies
 
 
 ---
@@ -84,8 +111,11 @@ npm start
 
 You must create and configure a config.env file inside the /api directory.
 
-## 📽️ Demo
-> [<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7346308639738978304?collapsed=1" height="541" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>](#)
+## 📖 Documentation & Links
+
+- 🔗 [[LinkedIn Project Post](https://www.linkedin.com/posts/mohamed-one_%D8%AA%D9%83%D9%85%D9%84%D9%87-%D9%84%D8%A8%D9%88%D8%B3%D8%AA-%D8%AA%D8%AE%D8%B1%D8%AC%D9%8A-%D8%A7%D9%84%D8%AD%D9%85%D8%AF-%D9%84%D9%84%D9%87-%D9%81%D8%AE%D9%88%D8%B1-%D8%AC%D8%AF%D8%A7-%D8%A8%D9%85%D8%B4%D8%A7%D8%B1%D9%83%D8%AA%D9%8A-activity-7346308826515537921-FQUz?utm_source=share&utm_medium=member_desktop&rcm=ACoAADnIeWEBLYAiEE5AMUbioB1CtAWvpenteww)](#)  
+- 📚 [[API Documentation](https://documenter.getpostman.com/view/28288286/2sAYXEEdnS)](#)  
+
 ## 🙌 Acknowledgments
 A huge thanks to my amazing teammates — proud to have worked with you all ❤️  
 This project was an incredible journey and a milestone in our learning path.

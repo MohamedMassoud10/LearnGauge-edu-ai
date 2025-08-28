@@ -98,14 +98,21 @@ Clone the repository:
 ```bash
 git clone https://github.com/MohamedMassoud10/LearnGauge-edu-ai.git
 ```
-## 📌 Frontend Setup
+
+
+## 🖥️ Frontend Setup
+```bash
 cd LearnGauge-edu-ai/ui
 npm install
 npm start
-## 📌 Backend Setup 
+```
+
+## 📌 Backend Setup
+```bash
 cd edu-vision/api
 npm install
 npm start
+```
 
 ##  Environment Configuration
 
